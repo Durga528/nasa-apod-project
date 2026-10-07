@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA Picture of the Day</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>NASA Picture of the Day</h1>
+  </header>
+
+  <main class="main-container">
+    <!-- Left / Top: Search Form & Current Image -->
+    <div class="content-section">
+      <form id="search-form">
+        <label for="search-input">Select Date:</label>
+        <input type="date" id="search-input" required>
+        <button type="submit">Submit</button>
+      </form>
+
+      <section id="current-image-container">
+        <!-- NASA APOD data dynamically JS nundi inject avthundi -->
+        <p>Loading picture of the day...</p>
+      </section>
+    </div>
+
+    <!-- Right / Side: Search History -->
+    <aside class="history-section">
+      <h2>Search History</h2>
+      <ul id="search-history">
+        <!-- Saved dates ikkada render avthayi -->
+      </ul>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
